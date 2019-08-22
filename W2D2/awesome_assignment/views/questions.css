@@ -1,0 +1,75 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+    width: 33%;
+    background: peachpuff;
+    /* below (within card) is not required for assignment  */
+    border: 1px solid black;
+    margin: 1px;
+}
+.pullquote {
+    font-family: 'Alfa Slab One', cursive;
+    padding: 0 2em;
+}
+.stamps {
+    font-family: 'Source Code Pro', monospace;
+    color: grey;
+    display: flex;
+    margin-left: 2em;
+    flex-direction: column;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header {
+    display: flex;
+    width: 100%;
+}
+.menu{
+    font-family: 'IBM Plex Serif', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: grey;
+  }
+.logo {
+    max-height: 3vw;
+}
+.branding {
+    width: 10em;
+    max-height: 5vw;
+}
+.nav {
+    width: 75%;
+    max-height: 7vw;
+}
+.contact {
+    display: flex;
+    padding: 0.5em;
+    background: peachpuff;
+    color: grey;
+    font-family: 'IBM Plex Serif', serif;
+    justify-content: space-around;
+}
+
+
+

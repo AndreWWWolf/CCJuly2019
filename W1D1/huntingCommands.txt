@@ -1,0 +1,18 @@
+command 1: 
+    list recently used commands with "history"
+command 2: 
+    delete files with "rm", 
+command 3:
+    "rm -r" will allow you to delete the entire contents of a directory, 
+    and "rm -rf" will delete the contents regardless of errors that it may cause 
+    (r represents recursive, and f represents force)
+command 4: 
+    search for files by name with "locate (keyword without parenthesis)"
+command 5:
+    list all active running programs with "top"
+stretch 
+command 1:    
+    download files from online using "curl -O [fileNameURL]"
+command 2:
+    To find all occurrences of a word in a file, 
+    use "grep 'searchWord' searchFile"

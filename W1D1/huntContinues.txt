@@ -1,0 +1,10 @@
+1. up and down arrow keys
+2. ctrl + shift + q to close all tabs, ctrl + shift + w to close single window, ctrl + c to close what is running within terminal.
+3. date
+4. which + search keyword
+5. seq  minValue  maxValue
+
+STRETCH
+1. pbcopy < [file_Name]
+2. pbpaste 
+3. sed + 's/SearchWord/ReplaceWord/g' + [fileName]

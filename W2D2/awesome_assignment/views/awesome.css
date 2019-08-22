@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header {
+    display: flex;
+    width: 100%;
+}
+.menu{
+    font-family: 'IBM Plex Serif', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: grey;
+  }
+.titles {
+    display: flex;
+    background:peachpuff;
+}
+.houseWords {
+    font-family: 'Alfa Slab One', cursive;
+    color: orange;
+    
+}
+.house {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 0 1em;
+}
+
+.logo {
+    max-height: 3vw;
+}
+
+
+.branding {
+    width: 10em;
+    max-height: 5vw;
+}
+
+.nav {
+    width: 75%;
+    max-height: 7vw;
+}
+
+.contact {
+    display: flex;
+    padding: 0.5em;
+    background: peachpuff;
+    color: grey;
+    font-family: 'IBM Plex Serif', serif;
+    justify-content: space-around;
+}
+.snow {
+    font-family: 'Alfa Slab One', cursive;
+    color: grey;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    width: 50%;
+}
+.stamps {
+    font-family: 'IBM Plex Serif', serif;
+    color: grey;
+}
+

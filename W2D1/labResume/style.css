@@ -1,0 +1,102 @@
+@media only screen and (min-width: 320px) {
+
+body {
+    background-color: #AEC5CB;
+    text-align: center;
+}
+.profilepic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    box-shadow: 15px 15px 10px grey;
+  }
+
+  .name {
+    font-family: 'Abril Fatface', cursive;
+    color: #BF382C;
+    text-shadow: 15px 15px 10px grey; 
+    
+  }
+  .name::after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    margin-top: 0.5em; /* This will center the border. */
+    width: 10%; /* Change this to whatever width you want. */
+    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+
+h1, h2 {
+    font-family: 'Abril Fatface', cursive;
+    color:  #BF382C;
+    text-shadow: 15px 15px 10px grey;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Abril Fatface', cursive;
+    color:  #BF382C;
+    text-shadow: 15px 15px 10px grey;    
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: underline;
+    color: #BF382C; 
+}
+a:active {
+    color: white;
+}
+.section:hover {
+    text-decoration: underline solid black;
+}
+.footbox:hover {
+    text-decoration: underline solid black;
+}
+
+li {
+    font-family: 'Dosis', sans-serif;
+
+}
+p {
+    margin-left: 15em;
+    margin-right: 15em;
+    font-family: 'Dosis', sans-serif;
+    font-size: 130%;
+    color: black;
+}
+.list {
+    padding-inline-start: 0;
+    text-align: center;
+}
+.schools {
+    color: white;
+    text-align: center;
+}
+.year {
+    color: black;
+    padding-left: 1em;
+}
+
+.footbox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.jump-to-top:hover {
+    text-decoration: underline solid black;
+}
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+.more-info {
+    border: 1px solid black;
+}
+
+}
+
+

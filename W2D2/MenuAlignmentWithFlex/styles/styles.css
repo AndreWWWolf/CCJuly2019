@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Thasadith');
+@import url("reset.css");
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Thasadith', sans-serif;
+  display: flex;
+  /* All child elements become flex elements */
+  align-items: center;
+  /* Horizontal */
+  justify-content: center;
+  /* Vertical */
+  flex-direction: column;
+  min-height: 100vh;
+  background: lightyellow;
+  /* Viewport heights */
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+header,
+article,
+footer {
+  background: lightblue;
+  padding: 1em 2em;
+  font-size: 2em;
+  width: 100%;
+}
+
+article {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  /* Take up the remaining space */
+}
+
+.logo {
+  height: 10vh;
+}
+
+.branding {
+  max-height: 10vh;
+  /* flex: 1;
+  background: white; */
+}
+
+
+.branding {
+
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+
+  width: 70%;
+
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.card {
+  width: 31%;
+  background: white;
+  padding: 1em;
+  margin: 1%;
+  min-height: 12em;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-out;
+}
+
+
+button {
+  width: 80%;
+  border: none;
+  padding: .5em 1.5em;
+  background: black;
+  color: white;
+  font-size: 1em;
+  margin-bottom: 1em;
+
+}
+
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.pullquote {
+  flex: 1;
+  font-size: .8em;
+
+}
+
+.card-footer {
+  text-align: center;
+}
+
+
+.card:hover {
+  box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 1);
+  transform: translateY(-2px) scale(1) translateZ(0);
+}
+  /* Box Shadow values
+
+  The horizontal offset of the shadow, positive means the shadow will be on the right of the box, a negative offset will put the shadow on the left of the box.
+
+  The vertical offset of the shadow, a negative one means the box-shadow will be above the box, a positive one means the shadow will be below the box.
+
+  The blur radius (optional), if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.
+
+  The spread radius (optional), positive values increase the size of the shadow, negative values decrease the size. Default is 0 (the shadow is same size as blur). */
