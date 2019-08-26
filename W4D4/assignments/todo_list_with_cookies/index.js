@@ -12,7 +12,20 @@ app.use(logger('dev'));
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
-// Custom middleware
+app.use((request, response, next) => {
+	// Set properties on `response.locals` to create variables
+	// that are global to all of our rendered templates
+	// including any partial.
+	// The following line means that a variable named "username"
+	// with a value of "" will useable in our templates.
+	response.locals.username = '';
+	const username = request.cookies.username;
+	if (username) {
+	  response.locals.username = username;
+	}
+	next();
+  });
+
 app.use((request, response, next) => {
 	const todoList = request.cookies.todoList;
 	response.locals.todoList = [];

@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
   let greeting = '';
+  let language = req.cookies.language;
   console.log(req.cookies);
   switch(req.cookies.language.toLowerCase()) {
     case "english":
@@ -25,7 +26,7 @@ app.get('/', (req, res) => {
       greeting = "Hola";
       break;
     default:
-      greeting = "Welcome";
+      greeting = "Welcome to my Awesome Website";
   }
   console.log(greeting);
   res.render('home', {n: req.cookies.name, g: greeting});
