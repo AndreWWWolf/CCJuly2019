@@ -3,9 +3,16 @@
 print("Hello World")
 # print doesn't add a new line (i.e. \n)
 
+# [1] pry(main)> print("Hello World")
+# Hello World=> nil
+
 # There's also 'puts'
 puts("Hello World")
 #  Adds a new line like console.log
+
+# [2] pry(main)> puts("Hello World")
+# Hello World
+# => nil
 
 # There is also 'p'
 p("Hello World")
@@ -13,9 +20,13 @@ p("Hello World")
 # Also returns the value passed to p()
 # Similar to console.dir
 
+# print "Hello World"
+# [3] pry(main)> p("Hello World")
+# "Hello World"
+# => "Hello World"
+
 # Bracket syntax fopr method arguments is optional e.g.
 # We can also do:
-print "Hello World"
 
 # Comments
 

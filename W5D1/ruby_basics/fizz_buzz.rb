@@ -7,7 +7,6 @@ for number in 1..100
         puts "Fizz"
     else puts number
     end
-    number += 1
 end
 
 # alt. way to achieve FIZZBUZZ

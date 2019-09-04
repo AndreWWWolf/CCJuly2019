@@ -15,3 +15,6 @@ puts pattern_swap
 # # => "My title is Steve and your name is Bob
 # str.gsub("name", "title")
 # # => "My title is Steve and your title is Bob"
+
+##gsub will replace all instances of swap variable
+##sub will only replace the first instance of swap variable within a string
