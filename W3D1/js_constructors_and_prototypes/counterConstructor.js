@@ -18,5 +18,6 @@ Counter.prototype.setTick = function(tick) {
     this.tick = tick;
     return this;
 }
+console.log(Counter.prototype);
 
 

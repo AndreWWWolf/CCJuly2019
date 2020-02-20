@@ -78,4 +78,11 @@ const counter = {
       return this.count;
     },
   };
-  
+  console.log(counter.inc().inc().inc().now());
+  console.log(counter.inc().now());
+  console.log(counter.dec().dec().now());
+  console.log(counter.count);
+  console.log(counter.setTick(2));
+  console.log(counter.inc().inc().now());
+  console.log(counter.dec().now());
+  console.log(counter.setTick(1));
